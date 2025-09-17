@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Star Wars Movies",
   description: "A list of Star Wars movies fetched from the SWAPI API.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -29,11 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <Starfield /> {/* adding animated starfield background */}
-        <div className="relative z-10">
-          {" "}
-          {/* ensuring content appears above stars */}
-        </div>
+        <Starfield />
       </body>
     </html>
   );
