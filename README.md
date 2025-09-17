@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prueba Técnica - Desarrollador Frontend
 
-## Getting Started
+Aplicación frontend desarrollada como parte de la prueba técnica para el puesto de **Desarrollador Frontend**.
+El proyecto consume la API pública de **Star Wars**: [https://swapi.info](https://swapi.info)
 
-First, run the development server:
+## 🚀 Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+👉 [Ver aplicación desplegada en Vercel](https://prueba-tecnica-tawny-gamma.vercel.app/)
+
+---
+
+## 📌 Objetivo
+
+Desarrollar una aplicación en **Next.js** que muestre un listado de películas de Star Wars y permita visualizar el detalle de cada una de ellas.
+
+---
+
+## 🖥️ Funcionalidades
+
+### Pantalla 1: Listado de Películas
+
+* Muestra un **listado de películas** de Star Wars.
+* Cada película aparece como una caja con el nombre de la película.
+* Al hacer clic en una película, se redirige a la **pantalla de detalle**.
+
+### Pantalla 2: Detalle de Película
+
+1. **Encabezado**
+
+   * Nombre de la película.
+   * Botón para volver al listado.
+
+2. **Información de la película**
+
+   * *Opening crawl*
+   * *Fecha de estreno*
+   * *Director*
+   * *Productor*
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+* [Next.js v15](https://nextjs.org/) con **App Router**
+* [Tailwind CSS v4](https://tailwindcss.com/) para los estilos
+* [Lucide Icons](https://lucide.dev/) para iconos
+* **Next Actions** para el fetching de datos desde la API
+* [Vercel](https://vercel.com/) para despliegue
+
+---
+
+## 📂 Estructura del proyecto
+
+```
+prueba-tecnica/
+│── app/
+│   ├── Film/[id]/        # Pantalla de detalle de película
+│   │   └── page.tsx
+│   ├── globals.css       # Estilos globales
+│   ├── layout.tsx        # Layout principal
+│   └── page.tsx          # Pantalla de listado de películas
+│
+│── components/           # Componentes reutilizables
+│   ├── openingCrawl.tsx  # Componente para el opening crawl
+│   └── starfield.tsx     # Componente del fondo estrellado
+│
+│── lib/
+│   └── actions.ts        # Lógica para fetching de datos
+│
+│── public/               
+│── .gitignore
+│── README.md
+│── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Instalación y ejecución local
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clonar el repositorio:
 
-## Learn More
+   ```bash
+   git clone https://github.com/dianavega14/prueba-tecnica.git
+   cd prueba-tecnica
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Instalar dependencias:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Ejecutar en entorno local:
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Abrir en el navegador:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 👤 Autora
+
+* **Diana Vega**
+* [GitHub](https://github.com/dianavega14)
+
